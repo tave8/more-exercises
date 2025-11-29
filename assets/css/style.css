@@ -1,16 +1,54 @@
 /* GENERAL SETTINGS */
 
+body {
+  padding: 1rem;
+}
+
+.red-border {
+  border: 1px solid red;
+}
+
+
+section.order > * {
+  border: 1px dotted red;
+}
+
+section.order > * > * {
+  border: 1px dotted blue;
+}
+
+
 /* ORDER */
+section.order {
+  padding: 1rem;
+}
 
 /* ORDER RECAP */
+section.order section.recap {
+  padding: 0.5rem;
+}
 
 /* ORDER RECAP BREADCRUMB */
 
+
+
 /* ORDER RECAP TITLE  */
 
-/* ORDER RECAP HELP  */
+section.order section.recap .title {
+    margin-bottom: 1rem;
+}
+
+
+/* ORDER RECAP HELPER  */
+
+section.order section.recap .helper {
+    font-size: 0.7rem;
+    color: lightgray;
+}
 
 /* ORDER INPUT */
+
+
 
 /* ORDER INPUT FILTERS */
 
