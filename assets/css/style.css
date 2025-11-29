@@ -12,13 +12,13 @@ body {
 
 section.order > * {
   /*FRAME*/
-  /* border: 2px solid red;  */
+  border: 2px solid red; 
   padding: 0.2rem;
 }
 
 section.order > * > * {
   /*FRAME*/
-  /* border: 1px dotted blue;  */
+  border: 1px dotted blue; 
   padding: 0.2rem;
 }
 
@@ -238,6 +238,33 @@ section.order section.output .tables table.stats td.sum-extended-price {
 }
 
 /* ORDER OUTPUT TOTALS-AND-SHIP */
+
+section.order section.output .totals-and-ship {
+  height: 4rem;
+}
+
+section.order section.output .totals-and-ship .left,
+section.order section.output .totals-and-ship .right {
+  width: max-content;
+  display: inline-block;
+}
+
+
+
+section.order section.output .totals-and-ship .right {
+  float: right;
+  text-align: right;
+}
+
+section.order section.output .totals-and-ship .right .totals > * {
+  /* margin-bottom: 1rem; */
+}
+
+section.order section.output .totals-and-ship .right .totals > *:not(:last-child) {
+  margin-bottom: .3rem;
+}
+
+
 
 /* ORDER OUTPUT TOTALS-AND-SHIP LEFT SHIP-INPUT */
 
