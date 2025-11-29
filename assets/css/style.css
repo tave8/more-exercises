@@ -8,55 +8,104 @@ body {
   border: 1px solid red;
 }
 
-
 section.order > * {
-  border: 1px dotted red;
+  border: 2px solid red; /*FRAME*/
+  padding: 0.2rem;
 }
 
 section.order > * > * {
-  border: 1px dotted blue;
+  border: 1px dotted blue; /*FRAME*/
+  padding: 0.2rem;
 }
 
+section.order > *:not(:last-child) {
+  margin-bottom: 0.3rem;
+}
+
+section.order > * > *:not(:last-child) {
+  margin-bottom: 0.3rem;
+}
 
 /* ORDER */
 section.order {
-  padding: 1rem;
+  padding: 0.5rem;
+  box-shadow: 1px 5px 10px 1px;
 }
 
 /* ORDER RECAP */
 section.order section.recap {
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
 }
 
 /* ORDER RECAP BREADCRUMB */
 
-
-
 /* ORDER RECAP TITLE  */
 
 section.order section.recap .title {
-    margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
-
 
 /* ORDER RECAP HELPER  */
 
 section.order section.recap .helper {
-    font-size: 0.7rem;
-    color: lightgray;
+  font-size: 0.7rem;
+  color: lightgray;
 }
 
 /* ORDER INPUT */
 
-
+section.order section.input {
+}
 
 /* ORDER INPUT FILTERS */
 
-/* ORDER INPUT FILTERS CHOOSE-RECORD */
+section.order section.input .filters {
+  /* display: ; */
+  padding-inline: 0.5rem;
+  background-color: lightgray;
+}
 
-/* ORDER INPUT FILTERS VIEW-BY */
+section.order section.input .filters .left,
+section.order section.input .filters .right {
+  width: max-content;
+  display: inline-block;
+}
+
+section.order section.input .filters .right {
+  float: right;
+}
+
+section.order section.input .filters .right > * {
+  /* display: inline-block; */
+}
+
+/* ORDER INPUT FILTERS LEFT CHOOSE-RECORD */
+section.order section.input .filters .left .choose-record {
+  display: inline-block;
+}
+
+/* ORDER INPUT FILTERS RIGHT VIEW-BY */
+
+section.order section.input .filters .right .view-by {
+  display: inline-block;
+}
 
 /* ORDER INPUT ACTIONS */
+
+section.order section.input .actions {
+  padding: 0.6rem 0.1rem;
+}
+
+section.order section.input .actions .left,
+section.order section.input .actions .right {
+  width: max-content;
+  display: inline-block;
+}
+
+section.order section.input .actions .right {
+  float: right;
+  margin-top: -4px;
+}
 
 /* ORDER INPUT ACTIONS LEFT */
 
@@ -76,6 +125,16 @@ section.order section.recap .helper {
 
 /* ORDER OUTPUT FILTERS */
 
+section.order section.output .filters {
+  border: 1px solid black;
+  padding: 0.3rem;
+  background-color: lightgray;
+}
+
+section.order section.output .filters > * {
+  display: inline-block;
+}
+
 /* ORDER OUTPUT FILTERS CHOOSE-1 */
 
 /* ORDER OUTPUT FILTERS QUICK-FIND */
@@ -86,7 +145,33 @@ section.order section.recap .helper {
 
 /* ORDER OUTPUT FILTERS REPORT-MENU */
 
-/* ORDER OUTPUT TABLE */
+/* ORDER OUTPUT TABLES */
+
+section.order section.output .tables table.items {
+  text-align: left;
+  /* border-spacing: 25px; */
+  width: 100%;
+}
+
+section.order section.output .tables table.items thead tr  {
+  border-bottom: 1px dotted gray;
+  
+}
+
+section.order section.output .tables table.items thead tr th {
+  padding-block: 0.8rem;
+
+}
+
+section.order section.output .tables table.items tbody tr {
+  /* padding-block: .8rem; */
+  /* margin-bottom: .5rem */
+}
+
+section.order section.output .tables table.items tbody tr:not(:last-child) {
+  /* padding-block: .8rem; */
+  /* margin-bottom: 3rem */
+}
 
 /* ORDER OUTPUT TOTALS-AND-SHIP */
 
