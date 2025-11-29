@@ -14,6 +14,11 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- font -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
 
@@ -85,69 +90,81 @@
           </section>
         </section>
         <section class="output">
-          <div class="filters">
-            <div class="choose-1">v</div>
-            <div class="quick-find">
-              <input type="text" />
+          <div class="filters-and-tables">
+            <div class="filters">
+              <div class="choose-1">v</div>
+              <div class="quick-find">
+                <input type="text" />
+              </div>
+              <div class="add-order">
+                <button>New Order Details</button>
+              </div>
+              <div class="actions-menu">
+                <select name="" id="">
+                  <option value="">Action A</option>
+                </select>
+              </div>
+              <div class="report-menu">
+                <select name="" id="">
+                  <option value="">Report A</option>
+                </select>
+              </div>
             </div>
-            <div class="add-order">
-              <button>New Order Details</button>
+            <div class="tables">
+              <table class="items">
+                <thead>
+                  <tr>
+                    <th>Product Name</th>
+                    <th>Unit Price</th>
+                    <th>Quantity</th>
+                    <th>Discount</th>
+                    <th>Product Category Name</th>
+                    <th>Product Supplier / Company Name</th>
+                    <th>Extended Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Grandma's Boysenberry</td>
+                    <td>$25</td>
+                    <td>20</td>
+                    <td>25.00%</td>
+                    <td>Condiments</td>
+                    <td>Grandma Kelly's Homestead</td>
+                    <td>$375.00</td>
+                  </tr>
+                  <tr>
+                    <td>Tofu</td>
+                    <td>$23.25</td>
+                    <td>20</td>
+                    <td>25.00%</td>
+                    <td>Produce</td>
+                    <td>Mayumi's</td>
+                    <td>$348.75</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="stats">
+                <tbody>
+                  <tr>
+                    <!-- <td class="avg-unit-price" colspan="2">Avg: $19.15</td>
+                    <td class="sum-quantity" colspan="1">Sum: 50</td>
+                    <td class="avg-discount" colspan="1">Avg: 25%</td>
+                    <td class="sum-extended-price" colspan="2">Sum: $792.75</td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+                    <td></td>
+                    <td class="avg-unit-price">Avg: $19.15</td>
+                    <td class="sum-quantity">Sum: 50</td>
+                    <td class="avg-discount">Avg: 25%</td>
+                    <td></td>
+                    <td></td>
+                    <td class="sum-extended-price">Sum: $792.75</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div class="actions-menu">
-              <select name="" id="">
-                <option value="">Action A</option>
-              </select>
-            </div>
-            <div class="report-menu">
-              <select name="" id="">
-                <option value="">Report A</option>
-              </select>
-            </div>
-          </div>
-          <div class="tables">
-            <table class="items">
-              <thead>
-                <tr>
-                  <th>Product Name</th>
-                  <th>Unit Price</th>
-                  <th>Quantity</th>
-                  <th>Discount</th>
-                  <th>Product Category Name</th>
-                  <th>Product Supplier / Company Name</th>
-                  <th>Extended Price</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Grandma's Boysenberry</td>
-                  <td>$25</td>
-                  <td>20</td>
-                  <td>25.00%</td>
-                  <td>Condiments</td>
-                  <td>Grandma Kelly's Homestead</td>
-                  <td>$375.00</td>
-                </tr>
-                <tr>
-                  <td>Tofu</td>
-                  <td>$23.25</td>
-                  <td>20</td>
-                  <td>25.00%</td>
-                  <td>Produce</td>
-                  <td>Mayumi's</td>
-                  <td>$348.75</td>
-                </tr>
-              </tbody>
-            </table>
-            <table class="calc">
-              <tbody>
-                <tr>
-                  <td>AVG</td>
-                  <td>$25</td>
-                  <td>Sum: 50</td>
-                  <td>$792</td>
-                </tr>
-              </tbody>
-            </table>
           </div>
           <div class="totals-and-ship">
             <div class="left">

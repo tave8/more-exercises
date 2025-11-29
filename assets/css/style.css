@@ -1,7 +1,9 @@
+
 /* GENERAL SETTINGS */
 
 body {
   padding: 1rem;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .red-border {
@@ -9,12 +11,14 @@ body {
 }
 
 section.order > * {
-  border: 2px solid red; /*FRAME*/
+  /*FRAME*/
+  /* border: 2px solid red;  */
   padding: 0.2rem;
 }
 
 section.order > * > * {
-  border: 1px dotted blue; /*FRAME*/
+  /*FRAME*/
+  /* border: 1px dotted blue;  */
   padding: 0.2rem;
 }
 
@@ -123,6 +127,10 @@ section.order section.input .actions .right {
 
 /* ORDER OUTPUT */
 
+section.order section.output .filters-and-tables {
+  border: 2px solid lightgray;
+}
+
 /* ORDER OUTPUT FILTERS */
 
 section.order section.output .filters {
@@ -147,20 +155,58 @@ section.order section.output .filters > * {
 
 /* ORDER OUTPUT TABLES */
 
-section.order section.output .tables table.items {
-  text-align: left;
-  /* border-spacing: 25px; */
+section.order section.output .tables > * {
   width: 100%;
 }
 
-section.order section.output .tables table.items thead tr  {
+section.order section.output .tables table.items td,
+section.order section.output .tables table.stats td {
+  width: 10%;
+}
+
+section.order section.output .tables table.items {
+  text-align: left;
+  border-bottom: 2px dashed lightgray;
+  /* border-collapse: separate; */
+  border-collapse: collapse;
+
+  border-spacing: 0.5rem 0.6rem;
+}
+
+section.order section.output .tables table.items tbody tr {
+  /* border-right: 1px dashed black; */
+}
+
+section.order section.output .tables table.stats {
+  text-align: right;
+  color: gray;
+  font-weight: bold;
+  margin-block: 0.3rem;
+}
+
+/* unit price, quantity, discount, extended price etc. */
+section.order section.output .tables table.items thead tr th:last-child,
+section.order section.output .tables table.items tbody tr td:nth-child(2),
+section.order section.output .tables table.items tbody tr td:nth-child(3),
+section.order section.output .tables table.items tbody tr td:nth-child(4),
+section.order section.output .tables table.items tbody tr td:last-child,
+section.order section.output .tables table.stats tbody tr td:last-child {
+  text-align: right;
+}
+
+section.order section.output .tables table.items tbody tr td {
+  padding: 0.4rem;
+  border-right: 1px dotted gray;
   border-bottom: 1px dotted gray;
-  
+}
+
+section.order section.output .tables table.items thead tr {
+  border-bottom: 1px dotted gray;
+  font-weight: bold;
 }
 
 section.order section.output .tables table.items thead tr th {
   padding-block: 0.8rem;
-
 }
 
 section.order section.output .tables table.items tbody tr {
@@ -171,6 +217,24 @@ section.order section.output .tables table.items tbody tr {
 section.order section.output .tables table.items tbody tr:not(:last-child) {
   /* padding-block: .8rem; */
   /* margin-bottom: 3rem */
+}
+
+section.order section.output .tables table.stats td.avg-unit-price {
+  /* column-span: 2; */
+}
+
+section.order section.output .tables table.stats td.sum-quantity {
+  /* column-span: 1; */
+  /* text-align: left; */
+}
+
+section.order section.output .tables table.stats td.avg-discount {
+  /* column-span: 1; */
+  /* text-align: left; */
+}
+
+section.order section.output .tables table.stats td.sum-extended-price {
+  /* column-span: 1; */
 }
 
 /* ORDER OUTPUT TOTALS-AND-SHIP */
