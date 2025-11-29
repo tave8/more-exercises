@@ -12,13 +12,13 @@ body {
 
 section.order > * {
   /*FRAME*/
-  border: 2px solid red; 
+  /* border: 2px solid red;  */
   padding: 0.2rem;
 }
 
 section.order > * > * {
   /*FRAME*/
-  border: 1px dotted blue; 
+  /* border: 1px dotted blue;  */
   padding: 0.2rem;
 }
 
@@ -43,10 +43,15 @@ section.order section.recap {
 
 /* ORDER RECAP BREADCRUMB */
 
+section.order section.recap .breadcrumb {
+
+}
+
 /* ORDER RECAP TITLE  */
 
 section.order section.recap .title {
-  /* margin-bottom: 1rem; */
+  margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
 /* ORDER RECAP HELPER  */
@@ -275,3 +280,22 @@ section.order section.output .totals-and-ship .right .totals > *:not(:last-child
 /* ORDER OUTPUT ACTIONS LEFT REQUIRED-INFO */
 
 /* ORDER OUTPUT ACTIONS RIGHT BUTTONS */
+
+section.order section.output .actions {
+  padding-block: .5rem;
+}
+
+
+section.order section.output .actions .left,
+section.order section.output .actions .right {
+  width: max-content;
+  display: inline-block;
+}
+
+
+
+section.order section.output .actions .right {
+  float: right;
+  margin-top: -4px;
+  /* text-align: right; */
+}
