@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Order Form</title>
 
     <!-- icons -->
     <link
@@ -23,54 +23,151 @@
       <section class="order">
         <section class="recap">
           <section class="breadcrumb">
-            <p></p>
+            <p>Home > Order Form</p>
           </section>
           <section class="title">
-            <h2></h2>
+            <h2>Order Form</h2>
           </section>
           <section class="help">
-            <p></p>
+            <p>Please review orders information below...</p>
           </section>
         </section>
         <section class="input">
           <section class="filters">
-            <div class="choose-record"></div>
-            <div class="view-by"></div>
+            <div class="choose-record">
+              <select name="" id="">
+                <option value="">Record</option>
+              </select>
+            </div>
+            <div class="view-by">
+              <span>View: </span>
+              <select name="" id="">
+                <option value="">Review Orders</option>
+              </select>
+            </div>
           </section>
           <section class="actions">
-            <div class="required-info"></div>
-            <div class="buttons"></div>
+            <div class="left">
+              <div class="required-info">
+                <p>..indicates a required field</p>
+              </div>
+            </div>
+            <div class="right">
+              <div class="buttons">
+                <button>OK</button>
+                <button>Delete</button>
+                <button>Cancel</button>
+              </div>
+            </div>
           </section>
           <section class="form">
             <form>
-              <div class="left"></div>
-              <div class="right"></div>
+              <div class="left">
+                <div class="input-customer">
+                  <label for="">Customer:</label>
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="right">
+                <div class="input-address">
+                  <label for="">Address:</label>
+                  <input type="text" />
+                </div>
+              </div>
             </form>
           </section>
         </section>
         <section class="output">
           <section class="filters">
             <div class="choose-1"></div>
-            <div class="quick-find"></div>
-            <div class="add-order"></div>
-            <div class="actions-menu"></div>
-            <div class="report-menu"></div>
+            <div class="quick-find">
+              <input type="text" />
+            </div>
+            <div class="add-order">
+              <button>New Order Details</button>
+            </div>
+            <div class="actions-menu">
+              <select name="" id="">
+                <option value="">Action A</option>
+              </select>
+            </div>
+            <div class="report-menu">
+              <select name="" id="">
+                <option value="">Report A</option>
+              </select>
+            </div>
           </section>
           <section class="table">
             <table>
               <thead>
-                <tr></tr>
+                <tr>
+                  <th>Product Name</th>
+                  <th>Unit Price</th>
+                  <th>Quantity</th>
+                  <th>Discount</th>
+                  <th>Product Category Name</th>
+                  <th>Product Supplier / Company Name</th>
+                  <th>Extended Price</th>
+                </tr>
               </thead>
-              <tbody></tbody>
+              <tbody>
+                <tr>
+                  <td>Grandma's Boysenberry</td>
+                  <td>$25</td>
+                  <td>20</td>
+                  <td>25.00%</td>
+                  <td>Condiments</td>
+                  <td>Grandma Kelly's Homestead</td>
+                  <td>$375.00</td>
+                </tr>
+              </tbody>
             </table>
           </section>
           <section class="totals-and-ship">
-            <div class="ship-input"></div>
-            <div class="totals"></div>
+            <div class="left">
+              <div class="ship-input">
+                <form>
+                    <div class="input-ship-name">
+                        <label for="">Ship Name</label>
+                        <input type="text">
+                    </div>
+                    <div class="input-ship-via">
+                        <label for="">Ship Via</label>
+                        <input type="text">
+                    </div>
+                </form>
+              </div>
+            </div>
+            <div class="right">
+              <div class="totals">
+                <div class="subtotal">
+                    <span>Subtotal: </span>
+                    <span>$792</span>
+                </div>
+                <div class="freight">
+                    <span>Freight:</span>
+                    <span>$38</span>
+                </div>
+                <div class="total">
+                    <span>Total:</span>
+                    <span>$831</span>
+                </div>
+              </div>
+            </div>
           </section>
           <section class="actions">
-            <div class="required-info"></div>
-            <div class="buttons"></div>
+            <div class="left">
+              <div class="required-info">
+                <p>.. indicates a required field</p>
+              </div>
+            </div>
+            <div class="right">
+              <div class="buttons">
+                <button>OK</button>
+                <button>Delete</button>
+                <button>Cancel</button>
+              </div>
+            </div>
           </section>
         </section>
       </section>
