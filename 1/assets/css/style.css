@@ -6,9 +6,59 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+html {
+  /* font-size: 10px; */
+}
+
+
+
 .red-border {
   border: 1px solid red;
 }
+
+button {
+  padding-inline: 1.4rem;
+  padding-block: 0.2rem;
+  font-family: 'Noto Sans', sans-serif;
+  border-radius: .2rem;
+}
+
+.clickable {
+  background-color: #f0f0f0;
+  border: 1px solid gray;
+}
+
+.clickable:hover {
+  background-color: #e3e2e2;
+  cursor: pointer;
+
+}
+
+
+.breadcrumb-other-page {
+  color: rgb(3, 74, 230);
+}
+
+.breadcrumb-other-page:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+
+.breadcrumb-this-page {
+  color: rgb(94, 94, 94);
+}
+
+
+select {
+
+}
+
+select:hover {
+  cursor: pointer;
+}
+
 
 section.order > * {
   /*FRAME*/
@@ -58,7 +108,7 @@ section.order section.recap .title {
 
 section.order section.recap .helper {
   font-size: 0.7rem;
-  color: lightgray;
+  color: rgb(174, 174, 174);
 }
 
 /* ORDER INPUT */
@@ -149,6 +199,32 @@ section.order section.output .filters > * {
 }
 
 /* ORDER OUTPUT FILTERS CHOOSE-1 */
+
+section.order section.output .filters-and-tables .filters .choose-1 {
+  /* border: 1px solid rgb(181, 181, 181); */
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  /* background-color: rgb(225, 225, 225); */
+  text-align: center;
+  /* vertical-align: middle; */
+}
+
+section.order section.output .filters-and-tables .filters .choose-1:hover {
+  /* cursor: pointer; */
+}
+
+/* align text vertically middle */
+section.order section.output .filters-and-tables .filters .choose-1:before {
+      content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+section.order section.output .filters-and-tables .filters .choose-1 > * {
+  /* display: inline; */
+}
 
 /* ORDER OUTPUT FILTERS QUICK-FIND */
 
@@ -246,11 +322,15 @@ section.order section.output .tables table.stats td.sum-extended-price {
 
 section.order section.output .totals-and-ship {
   height: 4rem;
+  border-bottom: 2px solid gray;
 }
 
 section.order section.output .totals-and-ship .left,
-section.order section.output .totals-and-ship .right {
+section.order section.output .totals-and-ship .right,
+section.order section.output .totals-and-ship .middle
+ {
   width: max-content;
+  /* width: 30%; */
   display: inline-block;
 }
 
@@ -260,7 +340,7 @@ section.order section.output .totals-and-ship .right {
   float: right;
   text-align: right;
 }
-
+ 
 section.order section.output .totals-and-ship .right .totals > * {
   /* margin-bottom: 1rem; */
 }
@@ -299,3 +379,6 @@ section.order section.output .actions .right {
   margin-top: -4px;
   /* text-align: right; */
 }
+
+
+
