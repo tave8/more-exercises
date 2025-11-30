@@ -1,15 +1,42 @@
-
 /* GENERAL SETTINGS */
 
 body {
-  padding: 1rem;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 html {
-  /* font-size: 10px; */
+  font-size: 1rem;
 }
 
+main {
+  padding: 1rem;
+}
+
+/*  */
+/* nav {
+  border-bottom: 1px solid black;
+}
+
+nav ol {
+  list-style-type: none;
+  padding-left: 0;
+  float: right;
+}
+
+nav > ol > li {
+  display: inline-block;
+}
+
+nav > ol > li a::after {
+  display: inline-block;
+  color: black;
+  content: ">";
+  font-size: 80%;
+  font-weight: bold;
+  padding: 0 3px;
+} */
+
+/*  */
 
 
 .red-border {
@@ -19,8 +46,8 @@ html {
 button {
   padding-inline: 1.4rem;
   padding-block: 0.2rem;
-  font-family: 'Noto Sans', sans-serif;
-  border-radius: .2rem;
+  font-family: "Noto Sans", sans-serif;
+  border-radius: 0.2rem;
 }
 
 .clickable {
@@ -31,9 +58,7 @@ button {
 .clickable:hover {
   background-color: #e3e2e2;
   cursor: pointer;
-
 }
-
 
 .breadcrumb-other-page {
   color: rgb(3, 74, 230);
@@ -44,21 +69,42 @@ button {
   cursor: pointer;
 }
 
-
-
 .breadcrumb-this-page {
   color: rgb(94, 94, 94);
 }
 
+.default-input {
+  /* min-height: 1.5rem;
+  height: 20px; */
+}
+
+
+
+.default-input:hover {
+}
+
+.default-input:focus {
+  /* border: 0; */
+}
+
+
+input {
+  height: 1.1rem;
+}
+
+button {
+  font-size: 1rem;
+}
+
 
 select {
+  font-size: 1rem;
 
 }
 
 select:hover {
   cursor: pointer;
 }
-
 
 section.order > * {
   /*FRAME*/
@@ -84,6 +130,10 @@ section.order > * > *:not(:last-child) {
 section.order {
   padding: 0.5rem;
   box-shadow: 1px 5px 10px 1px;
+  width: 80%;
+  min-width: 950px;
+  margin-inline: auto;
+
 }
 
 /* ORDER RECAP */
@@ -94,7 +144,6 @@ section.order section.recap {
 /* ORDER RECAP BREADCRUMB */
 
 section.order section.recap .breadcrumb {
-
 }
 
 /* ORDER RECAP TITLE  */
@@ -114,6 +163,31 @@ section.order section.recap .helper {
 /* ORDER INPUT */
 
 section.order section.input {
+}
+
+section.order section.input .form .left,
+section.order section.input .form .right {
+  width: max-content;
+  display: inline-block;
+}
+
+section.order section.input .form .right {
+  float: right;
+}
+
+section.order section.input .form .left > *,
+section.order section.input .form .right > * {
+  margin-bottom: .8rem;
+}
+
+section.order section.input .form .left > * > *,
+section.order section.input .form .right > * > * {
+  display: inline-block;
+}
+
+section.order section.input .form .left > * > input,
+section.order section.input .form .right > * > input {
+  float: right;
 }
 
 /* ORDER INPUT FILTERS */
@@ -216,10 +290,10 @@ section.order section.output .filters-and-tables .filters .choose-1:hover {
 
 /* align text vertically middle */
 section.order section.output .filters-and-tables .filters .choose-1:before {
-      content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
 
 section.order section.output .filters-and-tables .filters .choose-1 > * {
@@ -227,6 +301,16 @@ section.order section.output .filters-and-tables .filters .choose-1 > * {
 }
 
 /* ORDER OUTPUT FILTERS QUICK-FIND */
+
+section.order section.output .filters-and-tables .filters .quick-find {
+}
+
+section.order section.output .filters-and-tables .filters .quick-find > input {
+}
+
+section.order section.output .filters-and-tables .filters .quick-find > .icon {
+  margin-left: -25px;
+}
 
 /* ORDER OUTPUT FILTERS ADD-ORDER */
 
@@ -262,7 +346,7 @@ section.order section.output .tables table.stats {
   text-align: right;
   color: gray;
   font-weight: bold;
-  margin-block: 0.3rem;
+  margin-block: 0.6rem;
 }
 
 /* unit price, quantity, discount, extended price etc. */
@@ -326,13 +410,26 @@ section.order section.output .totals-and-ship {
 }
 
 section.order section.output .totals-and-ship .left,
-section.order section.output .totals-and-ship .right,
-section.order section.output .totals-and-ship .middle
- {
+section.order section.output .totals-and-ship .right {
   width: max-content;
   /* width: 30%; */
   display: inline-block;
 }
+
+/*  */
+section.order section.output .totals-and-ship .left .ship-inputs form > * {
+  margin-bottom: .8rem;
+}
+
+section.order section.output .totals-and-ship .left .ship-inputs form > * > * {
+  display: inline-block;
+}
+
+section.order section.output .totals-and-ship .left .ship-inputs form > * > input {
+  float: right;
+}
+
+
 
 
 
@@ -340,18 +437,20 @@ section.order section.output .totals-and-ship .right {
   float: right;
   text-align: right;
 }
- 
+
 section.order section.output .totals-and-ship .right .totals > * {
   /* margin-bottom: 1rem; */
 }
 
 section.order section.output .totals-and-ship .right .totals > *:not(:last-child) {
-  margin-bottom: .3rem;
+  margin-bottom: 0.3rem;
 }
 
+section.order section.output .totals-and-ship .right .totals .freight input {
+  width: 40px;
+}
 
-
-/* ORDER OUTPUT TOTALS-AND-SHIP LEFT SHIP-INPUT */
+/* ORDER OUTPUT TOTALS-AND-SHIP LEFT SHIP-INPUTS */
 
 /* ORDER OUTPUT TOTALS-AND-SHIP RIGHT TOTALS */
 
@@ -362,9 +461,8 @@ section.order section.output .totals-and-ship .right .totals > *:not(:last-child
 /* ORDER OUTPUT ACTIONS RIGHT BUTTONS */
 
 section.order section.output .actions {
-  padding-block: .5rem;
+  padding-block: 0.5rem;
 }
-
 
 section.order section.output .actions .left,
 section.order section.output .actions .right {
@@ -372,13 +470,8 @@ section.order section.output .actions .right {
   display: inline-block;
 }
 
-
-
 section.order section.output .actions .right {
   float: right;
   margin-top: -4px;
   /* text-align: right; */
 }
-
-
-
