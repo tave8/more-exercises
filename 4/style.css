@@ -1,0 +1,72 @@
+body {
+  font-size: 0.7rem;
+}
+
+/* BASE TABLE */
+
+.base-table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 60%;
+  margin: 2rem auto;
+  table-layout: fixed;
+
+}
+
+.base-table td {
+  padding: 1rem; 
+  height: 10px;
+  width: 10px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid black;
+}
+
+/* TABLE 1 */
+
+.table1 {
+  border: 10px solid red;
+}
+
+.table1 tr:nth-child(1) td {
+  border-top: 1px solid black;
+}
+
+/* TABLE 2 */
+
+.table2 {
+}
+
+.table2 td:nth-child(2) {
+  border-right: 1px solid black;
+}
+
+.table2 tr:nth-child(2) td {
+  border-bottom: 1px solid black;
+}
+
+/* TABLE 3 */
+
+.table3 {
+}
+
+.table3 td:nth-child(3) {
+  border-right: 1px solid black;
+}
+
+.table3 tr:nth-child(3) td {
+  border-bottom: 1px solid black;
+}
+
+/* TABLE 4 */
+
+.table4 {
+}
+
+.table4 td:nth-child(4) {
+  border-right: 1px solid black;
+}
+
+.table4 tr:nth-child(4) td {
+  border-bottom: 1px solid black;
+}

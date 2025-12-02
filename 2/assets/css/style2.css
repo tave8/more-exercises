@@ -1,0 +1,94 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+table {
+  width: 70%;
+  border-spacing: 2px;
+  border-collapse: collapse;
+  border: 1px solid black;
+  table-layout: fixed;
+}
+
+table caption {
+  text-align: left;
+  caption-side: top;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+td, th {
+  border: 1px solid black;
+}
+
+table thead tr {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+}
+
+table thead tr th,
+table tbody tr td {
+  padding: 0.3rem;
+}
+
+/* table body,
+column 1 */
+table thead tr th {
+  width: 100px;
+}
+
+/* in table body,
+in column 1, 
+the odd-numbered rows */
+table tbody tr:nth-child(odd) td:nth-child(1) {
+  background-color: rgb(28, 50, 248);
+  color: white;
+  text-align: left;
+}
+
+/* in table body,
+the cell 1 of even-numbered rows */
+table tbody tr:nth-child(even) td:nth-child(1) {
+  background-color: rgb(18, 18, 193);
+  color: white;
+  text-align: left;
+}
+
+/* in table body,
+every cell except cell 1 
+of all rows
+ */
+table tbody tr td:not(:nth-child(1)) {
+  text-align: center;
+}
+
+/* in table body,
+every cell except cell 1 
+of all odd-numbered rows
+*/
+table tbody tr:nth-child(odd) td:not(:nth-child(1)) {
+  background-color: rgb(247, 247, 247);
+}
+
+/* in table body,
+every cell except cell 1 
+of all even-numbered rows
+ */
+table tbody tr:nth-child(even) td:not(:nth-child(1)) {
+  background-color: rgb(194, 194, 194);
+}
+
+table thead tr th:nth-child(1) {
+  /* text-align: right; */
+}
+
+
+/* table body, 
+last row,
+column 3 */
+
+table tbody tr:nth-last-child(1) td:nth-child(3) {
+  background-color: yellow;
+}

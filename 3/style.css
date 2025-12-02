@@ -1,0 +1,70 @@
+/* TABLE VERSION 1 */
+
+.table-version-1 {
+  border-collapse: collapse;
+  /* border-spacing: 0px 0px; */
+  width: 70%;
+}
+
+.table-version-1 td, 
+.table-version-1 th {
+  border-right: 1px solid black;
+  /* border-left: 1px solid black; */
+  /* border-right: 1px solid black; */
+  padding: .4rem;
+}
+
+.table-version-1 td:nth-child(1) {
+  border-left: 1px solid black;
+}
+
+
+.table-version-1 thead th {
+  /* width: 25%;   */
+  border-bottom: 1px solid black;
+
+}
+
+.table-version-1 thead th:nth-child(n+2) {
+  border-top: 1px solid black;
+}
+
+.table-version-1 tbody tr:nth-last-child(1) td {
+  border-bottom: 1px solid black;
+}
+
+/* TABLE VERSION 2 */
+
+
+.table-version-2 {
+  border-collapse: separate;
+  border-spacing: 10px 10px;
+  width: 70%;
+}
+
+.table-version-2 td, 
+.table-version-2 th {
+  border-right: 1px solid black;
+  /* border-left: 1px solid black; */
+  /* border-right: 1px solid black; */
+  padding: .4rem;
+}
+
+.table-version-2 td:nth-child(1) {
+  border-left: 1px solid black;
+}
+
+
+.table-version-2 thead th {
+  /* width: 25%;   */
+  border-bottom: 1px solid black;
+
+}
+
+.table-version-2 thead th:nth-child(n+2) {
+  border-top: 1px solid black;
+}
+
+.table-version-2 tbody tr:nth-last-child(1) td {
+  border-bottom: 1px solid black;
+}

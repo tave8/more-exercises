@@ -1,0 +1,117 @@
+.page {
+  /* LAYOUT BORDER */
+  border: 2px solid black;
+  width: 99%;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0.1rem;
+  margin: 0 auto;
+}
+
+.page > * {
+  /* LAYOUT BORDER */
+
+  border: 2px dotted black;
+  padding: 0.1rem;
+  margin: 0.1rem 0.1rem;
+  display: flex;
+}
+
+.page > * > * {
+  /* LAYOUT BORDER */
+
+  border: 1px dotted red;
+  padding: 0.1rem;
+  margin: 0.1rem 0.1rem;
+
+  display: flex;
+}
+
+.page > * > * > * {
+  /* LAYOUT BORDER */
+  border: 1px dotted blue;
+  padding: 0.1rem;
+
+  margin: 0.1rem 0.1rem;
+
+  display: flex;
+}
+
+.page > .head {
+  flex: 0.1;
+}
+
+.page > .body {
+  flex: 1;
+}
+
+.page > .head > .company {
+  flex: 0.2;
+  align-items: center;
+  flex-direction: row;
+}
+
+.page > .head > .company > * {
+  /* flex: 1; */
+}
+
+.page > .head > .menu {
+  flex: 1;
+  justify-content: end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.page > .head > .menu > * {
+  margin-inline: 0.1rem;
+}
+
+.page > .head > .company > .logo {
+  width: 4rem;
+}
+
+.page > .head > .company > .logo > img {
+  width: 100%;
+}
+
+.page > .head > .company > .name {
+  flex: 1;
+}
+
+/* .page > .head > .menu > .menu-1 {
+  flex: .2;
+} */
+
+/* .page > .head > .menu > .menu-1 > * {
+  margin-inline: 1rem;
+}
+
+.page > .head > .menu > .menu-2 > * {
+  margin-inline: 1rem;
+} */
+
+.page > .body > .sidebar {
+  flex: 0.1;
+}
+
+.page > .body > .sidebar {
+  flex-direction: column;
+}
+
+.page > .body > .content {
+  flex: 1;
+  flex-direction: column;
+}
+
+.page > .body > .content > .head {
+  flex: 0.1;
+}
+
+.page > .body > .content > .body {
+  flex: 1;
+}
+
+.page > .body > .content > .foot {
+  flex: 0.1;
+}
