@@ -13,6 +13,7 @@
   /* LAYOUT BORDER */
 
   border: 2px dotted black;
+
   padding: 0.1rem;
   margin: 0.1rem 0.1rem;
   display: flex;
@@ -20,7 +21,6 @@
 
 .page > * > * {
   /* LAYOUT BORDER */
-
   border: 1px dotted red;
   padding: 0.1rem;
   margin: 0.1rem 0.1rem;
@@ -39,36 +39,44 @@
 }
 
 .page > .head {
-  flex: 0.1;
+  flex: .5;
 }
 
 .page > .body {
-  flex: 1;
+  flex: 9;
 }
 
 .page > .head > .company {
-  flex: 0.2;
-  align-items: center;
+  flex: 0.15;
   flex-direction: row;
+  align-items: stretch;
 }
 
 .page > .head > .company > * {
   /* flex: 1; */
+  display: flex;
+  align-items: center;
+  background-color: rgb(242, 185, 223);
+
 }
 
 .page > .head > .menu {
   flex: 1;
   justify-content: end;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
 }
 
 .page > .head > .menu > * {
   margin-inline: 0.1rem;
+  display: flex;
+  align-items: center;
+  background-color: rgb(165, 235, 243);
+
 }
 
 .page > .head > .company > .logo {
-  width: 4rem;
+  width: 3rem;
 }
 
 .page > .head > .company > .logo > img {
@@ -92,7 +100,8 @@
 } */
 
 .page > .body > .sidebar {
-  flex: 0.1;
+  flex: 0.08;
+  background-color: rgb(195, 215, 232);
 }
 
 .page > .body > .sidebar {
@@ -106,12 +115,18 @@
 
 .page > .body > .content > .head {
   flex: 0.1;
+  background-color: rgb(239, 214, 161);
+
 }
 
 .page > .body > .content > .body {
   flex: 1;
+  background-color: rgb(175, 239, 161);
+
 }
 
 .page > .body > .content > .foot {
   flex: 0.1;
+  background-color: rgb(226, 198, 240);
+
 }
