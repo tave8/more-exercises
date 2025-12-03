@@ -6,9 +6,25 @@
 .layout5,
 .layout6 {
   padding: 0.3rem;
-  /* border: 1px dotted black; */
+  border: 1px dotted black;
   display: flex;
 }
+
+/* @media (min-width: 600px) {
+  
+  .container > .body > .main > .content > .box-container.box-container1 {
+    flex: 2;
+  }
+
+  .container > .body > .main > .content > .box-container.box-container2 {
+    flex: 0;
+  } 
+   
+
+  p {
+    font-size: 3rem;
+  }
+} */
 
 .container {
   /* height: 600px; */
@@ -124,7 +140,8 @@
 .container > .body > .main > .content {
   flex: 1;
   /* flex-direction: column; */
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
+  gap: 0.3rem;
 }
 
 .container > .body > .main > .content > * {
@@ -174,7 +191,7 @@
 }
 
 .container > .body > .main > .content > .box-container.box-container2 {
-  flex: 0.6;
+  flex: 1;
 }
 
 .container > .body > .main > .content > .box-container.box-container1 > .box.box1 {
@@ -182,7 +199,7 @@
 }
 
 .container > .body > .main > .content > .box-container.box-container1 > .box.box2 {
-  flex: 0.6;
+  flex: 1;
 }
 
 .container > .body > .main > .content > .box-container.box-container2 > .box.box1 {
@@ -190,5 +207,5 @@
 }
 
 .container > .body > .main > .content > .box-container.box-container2 > .box.box2 {
-  flex: 1.2;
+  flex: 1;
 }
