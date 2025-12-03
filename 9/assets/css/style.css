@@ -2,16 +2,19 @@
 .layout1,
 .layout2,
 .layout3,
-.layout4 {
+.layout4,
+.layout5,
+.layout6 {
   padding: 0.3rem;
-  border: 1px dotted black;
+  /* border: 1px dotted black; */
   display: flex;
 }
 
 .container {
-  height: 600px;
+  /* height: 600px; */
   margin: 1rem auto;
   flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container > .head {
@@ -114,35 +117,78 @@
 
 .container > .body > .main > .title {
   flex: 0.1;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .container > .body > .main > .content {
   flex: 1;
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
 }
 
 .container > .body > .main > .content > * {
   flex-direction: column;
 }
 
-/* the windows */
-.container > .body > .main > .content > * > * {
+/* the box container */
+.container > .body > .main > .content > .box-container {
+  gap: 0.3rem;
+}
+
+/* the boxes */
+.container > .body > .main > .content > .box-container > .box {
+  flex: 1;
+  flex-direction: column;
+  border: 1px solid rgb(146, 146, 146);
+  border-radius: 0.3rem;
+  padding: 0;
+}
+
+.container > .body > .main > .content > .box-container > .box > * {
+  /* border: 1px solid black; */
+}
+
+.container > .body > .main > .content > .box-container > .box > .head {
+  background-color: rgb(221, 221, 221);
+  justify-content: space-between;
+}
+
+.container > .body > .main > .content > .box-container > .box > .head > .settings {
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.container > .body > .main > .content > .box-container > .box > .body {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.container > .body > .main > .content > .box-container > .box > .head > .title {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.container > .body > .main > .content > .box-container.box-container1 {
   flex: 1;
 }
 
-.container > .body > .main > .content > .box-container1 {
-  /* order: 1; */
-  flex: 1;
-}
-
-.container > .body > .main > .content > .box-container2 {
-  /* order: 1; */
+.container > .body > .main > .content > .box-container.box-container2 {
   flex: 0.6;
 }
 
-.container > .body > .main > .content > .box-container1 > .box1 {
-  flex: 3;
+.container > .body > .main > .content > .box-container.box-container1 > .box.box1 {
+  flex: 1;
 }
 
-.container > .body > .main > .content > .box-container2 > .box1 {
-  flex: 1.5;
+.container > .body > .main > .content > .box-container.box-container1 > .box.box2 {
+  flex: 0.6;
+}
+
+.container > .body > .main > .content > .box-container.box-container2 > .box.box1 {
+  flex: 1;
+}
+
+.container > .body > .main > .content > .box-container.box-container2 > .box.box2 {
+  flex: 1.2;
 }
