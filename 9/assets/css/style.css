@@ -12,11 +12,11 @@
 
 /* @media (min-width: 600px) {
   
-  .container > .body > .main > .content > .box-container.box-container1 {
+  .container > .body > .main > .content > {
     flex: 2;
   }
 
-  .container > .body > .main > .content > .box-container.box-container2 {
+  .container > .body > .main > .content > {
     flex: 0;
   } 
    
@@ -83,6 +83,7 @@
   flex-direction: column;
   border: 2px solid green;
   gap: 0.5rem;
+  min-width: 100px;
 }
 
 .container > .body > .sidebar > * {
@@ -149,63 +150,85 @@
 }
 
 /* the box container */
-.container > .body > .main > .content > .box-container {
+.container > .body > .main > .content {
   gap: 0.3rem;
+  align-items: start;
 }
 
 /* the boxes */
-.container > .body > .main > .content > .box-container > .box {
+.container > .body > .main > .content > .box {
   flex: 1;
   flex-direction: column;
   border: 1px solid rgb(146, 146, 146);
   border-radius: 0.3rem;
   padding: 0;
+
 }
 
-.container > .body > .main > .content > .box-container > .box > * {
+.container > .body > .main > .content > .box > * {
   /* border: 1px solid black; */
 }
 
-.container > .body > .main > .content > .box-container > .box > .head {
+.container > .body > .main > .content > .box > .head {
   background-color: rgb(221, 221, 221);
   justify-content: space-between;
 }
 
-.container > .body > .main > .content > .box-container > .box > .head > .settings {
+.container > .body > .main > .content > .box > .head > .settings {
   gap: 0.5rem;
   flex-wrap: wrap;
 }
 
-.container > .body > .main > .content > .box-container > .box > .body {
+.container > .body > .main > .content > .box > .body {
   flex: 1;
   overflow-y: auto;
+  /* max-height: 200px; */
+  display: block;
 }
 
-.container > .body > .main > .content > .box-container > .box > .head > .title {
+.container > .body > .main > .content > .box > .head > .title {
   font-weight: bold;
   text-transform: capitalize;
 }
 
-.container > .body > .main > .content > .box-container.box-container1 {
+.container > .body > .main > .content {
   flex: 1;
 }
 
-.container > .body > .main > .content > .box-container.box-container2 {
+.container > .body > .main > .content {
   flex: 1;
 }
 
-.container > .body > .main > .content > .box-container.box-container1 > .box.box1 {
-  flex: 1;
+/* BOXES */
+.container > .body > .main > .content > .box.box1 {
+  /* flex: 2; */
+  min-width: 500px;
+  /* max-width: 400px; */
+  max-height: 500px;
 }
 
-.container > .body > .main > .content > .box-container.box-container1 > .box.box2 {
-  flex: 1;
+.container > .body > .main > .content > .box.box2 {
+  /* flex: 1; */
+  min-width: 300px;
+  /* max-width: 400px; */
+
+  max-height: 400px;
 }
 
-.container > .body > .main > .content > .box-container.box-container2 > .box.box1 {
-  flex: 1;
+.container > .body > .main > .content > .box.box3 {
+  /* flex: 1; */
+  min-width: 500px;
+  /* max-width: 400px; */
+
+  max-height: 200px;
+
 }
 
-.container > .body > .main > .content > .box-container.box-container2 > .box.box2 {
-  flex: 1;
+.container > .body > .main > .content > .box.box4 {
+  /* flex: 1; */
+  min-width: 300px;
+  /* max-width: 400px; */
+
+  max-height: 200px;
+
 }
