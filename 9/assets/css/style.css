@@ -1,0 +1,148 @@
+.layout0,
+.layout1,
+.layout2,
+.layout3,
+.layout4 {
+  padding: 0.3rem;
+  border: 1px dotted black;
+  display: flex;
+}
+
+.container {
+  height: 600px;
+  margin: 1rem auto;
+  flex-direction: column;
+}
+
+.container > .head {
+  flex: 0.1;
+  flex-direction: column;
+  border: 2px solid red;
+  background-color: lightgray;
+}
+
+.container > .head > .generic-settings {
+  justify-content: end;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* .container > .head > .generic-settings > * {
+    gap
+} */
+
+.container > .head > .generic-settings > .software-info {
+  flex: 1;
+}
+
+.container > .head > .generic-settings > .search {
+}
+
+.container > .head > .generic-settings > .date {
+}
+
+.container > .head > .generic-settings > .notifications {
+}
+
+.container > .head > .generic-settings > .account-settings {
+}
+
+.container > .head > .menu {
+  background-color: rgb(91, 191, 224);
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.container > .body {
+  /* flex-direction: column; */
+  flex: 1;
+  border: 2px solid blue;
+}
+
+.container > .body > .sidebar {
+  flex: 0.1;
+  flex-direction: column;
+  border: 2px solid green;
+  gap: 0.5rem;
+}
+
+.container > .body > .sidebar > * {
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  flex-direction: column;
+  /* align-content: stretch; */
+  padding: 0;
+}
+
+.container > .body > .sidebar > * > .title {
+  border-bottom: 1px solid lightgray;
+  background-color: rgb(233, 232, 232);
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  padding: 0.3rem;
+}
+
+.container > .body > .sidebar > * > .content {
+  background-color: rgb(81, 166, 235);
+  min-height: 10px;
+  padding: 0.3rem;
+  gap: 0.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.container > .body > .sidebar > * > .content > * {
+}
+
+.container > .body > .sidebar > * > .content > * > span {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  color: rgb(25, 25, 241);
+}
+
+.container > .body > .sidebar > * > .content > * > span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.container > .body > .main {
+  flex-direction: column;
+  flex: 1;
+  border: 2px solid orange;
+}
+
+.container > .body > .main > .title {
+  flex: 0.1;
+}
+
+.container > .body > .main > .content {
+  flex: 1;
+}
+
+.container > .body > .main > .content > * {
+  flex-direction: column;
+}
+
+/* the windows */
+.container > .body > .main > .content > * > * {
+  flex: 1;
+}
+
+.container > .body > .main > .content > .box-container1 {
+  /* order: 1; */
+  flex: 1;
+}
+
+.container > .body > .main > .content > .box-container2 {
+  /* order: 1; */
+  flex: 0.6;
+}
+
+.container > .body > .main > .content > .box-container1 > .box1 {
+  flex: 3;
+}
+
+.container > .body > .main > .content > .box-container2 > .box1 {
+  flex: 1.5;
+}
